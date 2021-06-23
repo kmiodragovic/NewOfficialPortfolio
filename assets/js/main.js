@@ -56,7 +56,7 @@ sr.reveal('.work__img',{interval: 200});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 
-//  function to set a given theme/color-scheme
+sr.reveal('.checkbox'),{interval: 200};
 
 // Get the theme toggle input
 const themeToggle = document.querySelector(
@@ -89,7 +89,27 @@ if (e.target.checked) {
 }
 
 // Add an event listener to the theme toggle, which will switch the theme
-themeToggle.addEventListener("change", switchTheme, false);
+themeToggle.addEventListener("change", switchTheme, true);
+
+
+Timer
+setInterval(function(){
+  
+    const currentDate = new Date();
+
+    if( "theme", "light" === true){
+        if(currentDate.getHours() >= 7 && currentDate.getHours() <= 20 ){
+                changeHandler();
+                console.log(currentDate.getHours());
+        }
+    }
+    else if("theme", "light" === false){
+        console.log(currentDate.getHours());
+    }
+
+}, 1000);
+
+console.log();
 
 
 
