@@ -1,17 +1,4 @@
-.theme-light {
-    --color-primary: #0060df;
-    --color-secondary: #fbfbfe;
-    --color-accent: #fd6f53;
-    --font-color: #000000;
-    --mainBg: var(--color-secondary);
-  }
-  .theme-dark {
-    --color-primary: #17ed90;
-    --color-secondary: #000000;
-    --color-accent: #12cdea;
-    --font-color: #ffffff;
-    --mainBg: var(var(--color-black));
-  }
+
   .container {
     display: flex;
     width: 100%;
@@ -33,8 +20,8 @@
     border-radius: 5px;
   }
   
-  /* The switch - the box around the slider */
-  .switch {
+  /* The theme-switch - the box around the slider */
+  .theme-switch {
     position: relative;
     display: inline-block;
     width: 60px;
@@ -42,7 +29,7 @@
   }
   
   /* Hide default HTML checkbox */
-  .switch input {
+  .theme-switch input {
     opacity: 0;
     width: 0;
     height: 0;
