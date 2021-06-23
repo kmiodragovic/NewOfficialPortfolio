@@ -3,12 +3,14 @@
     --color-secondary: #fbfbfe;
     --color-accent: #fd6f53;
     --font-color: #000000;
+    --mainBg: var(--color-secondary);
   }
   .theme-dark {
     --color-primary: #17ed90;
     --color-secondary: #000000;
     --color-accent: #12cdea;
     --font-color: #ffffff;
+    --mainBg: var(var(--color-black));
   }
   .container {
     display: flex;
@@ -136,3 +138,6 @@
     --color-hover: var(--light-hover);
     --color-txt: var(--light-text);
   }
+
+
+

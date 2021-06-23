@@ -1,19 +1,19 @@
 /*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/*===== VARIABLES CSS =====*/
+/*===== VARIABLE CSS =====*/
 :root{
     --header-height: 3rem;
     --font-semi: 600;
 }
 
-/*===== Colores =====*/
+/*===== Colors =====*/
 :root{
     --first-color: #4070F4;
     --second-color: #0E2431;
 }
 
-/*===== Fuente y tipografia =====*/
+/*===== Letters =====*/
 :root{
     --body-font: 'Poppins', sans-serif;
 
@@ -28,7 +28,7 @@
     }
 }
 
-/*===== Margenes =====*/
+/*===== Margin =====*/
 :root{
     --mb-1: 0.5rem;
     --mb-2: 1rem;
@@ -73,7 +73,7 @@ a{
 img{
     max-width: 100%;
     height: auto;
-    display: block; // borra los espacios en blanco
+    display: block; 
 }
 
 /*===== CLASS CSS ===== */
@@ -487,4 +487,29 @@ img{
             right: 10%;
         }
     }
+}
+
+/*===== Themes =====*/
+
+$dark-color: #111;
+$light-color: #eee;
+
+body.dark-mode {
+  background-color: $dark-color;
+  color: $light-color;
+  a {
+    color: $dark-color;
+  }
+  button {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+}
+
+body.light-mode {
+  background-color: $light-color;
+  color: $dark-color;
+  a {
+    color: $dark-color;
+  }
 }
