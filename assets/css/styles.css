@@ -80,8 +80,9 @@ h1,h2,p{
   margin: 0;
 }
 
-h1.home__title{
+.home__title{
   color: var(--idee);
+  z-index: 10;
 }
 
 ul{
@@ -165,6 +166,19 @@ img{
     padding: 2rem;
     background-color: var(--body);
     transition: .5s;
+    z-index: 1;
+  }
+
+  .home__title{
+    margin-top: 50px;
+  }
+
+  .home__img img{
+    transform: rotateY(180deg);
+  }
+
+  .section-title{
+    margin-top: 100px;
   }
 }
 .nav__item{
@@ -318,18 +332,10 @@ img{
   border-radius: .5rem;
   z-index: var(--z-back);
 }
-.skills__html{
-  width: 95%;
+.skills__progress{
+  width: var(--progress);
 }
-.skills__css{
-  width: 85%;
-}
-.skills__js{
-  width: 65%;
-}
-.skills__ux{
-  width: 85%;
-}
+
 .skills__img{
   border-radius: .5rem;
 }
