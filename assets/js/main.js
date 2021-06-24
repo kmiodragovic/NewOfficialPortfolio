@@ -92,24 +92,5 @@ if (e.target.checked) {
 themeToggle.addEventListener("change", switchTheme, true);
 
 
-Timer
-setInterval(function(){
-  
-    const currentDate = new Date();
-
-    if( "theme", "light" === true){
-        if(currentDate.getHours() >= 7 && currentDate.getHours() <= 20 ){
-                changeHandler();
-                console.log(currentDate.getHours());
-        }
-    }
-    else if("theme", "light" === false){
-        console.log(currentDate.getHours());
-    }
-
-}, 1000);
-
-console.log();
-
 
 
