@@ -70,6 +70,7 @@
 }
 html{
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 body{
   
@@ -142,6 +143,11 @@ img{
 }
 
 /*===== NAV =====*/
+
+.container{
+  padding-bottom: 25px;
+}
+
 .nav{
   height: var(--header-height);
   display: flex;
@@ -240,6 +246,10 @@ img{
   width: 295px;
 }
 
+.home__img img{
+  border-radius: 5px;
+}
+
 /*BUTTONS*/
 .button{
   display: inline-block;
@@ -332,10 +342,19 @@ img{
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
   border-radius: .5rem;
   overflow: hidden;
+  height: 200px;
+}
+
+.work__img a .image_container{
+  height: 200px;
+  overflow: hidden;
 }
 .work__img img{
   transition: 1s;
   cursor: pointer;
+  height: 100%;
+  margin-left:auto;
+  margin-right: auto;
 }
 .work__img img:hover{
   transform: scale(1.1);
