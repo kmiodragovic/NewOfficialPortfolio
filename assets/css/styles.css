@@ -273,7 +273,7 @@ img{
   border-radius: .5rem;
 }
 .button:hover{
-  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+  transform: scale(1.95);
 }
 
 /* ===== ABOUT =====*/
@@ -375,6 +375,7 @@ img{
   border-radius: .5rem;
   outline: none;
   margin-bottom: var(--mb-4);
+  border: 2px solid black;
 }
 .contact__button{
   display: block;
@@ -383,6 +384,7 @@ img{
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
 }
 
 /* ===== FOOTER =====*/
