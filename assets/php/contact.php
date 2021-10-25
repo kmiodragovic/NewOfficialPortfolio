@@ -1,16 +1,28 @@
-<?php
+<?php 
 
-if (isset($_POST['submit'])){
-    $name = $_POST['name'];
-    $subject = $_POST['subject'];
-    $mailFrom = $_POST['mail'];
-    $message = $_POST['message'];
+    if(isset($_POST['submit']))
+    {
+       $UserName = $_POST['name'];
+       $Email = $_POST['mail'];
+       $Subject = $_POST['Subject'];
+       $Msg = $_POST['Message'];
 
-    $mailTo = "k.2003mio@gmail.com";
-    $headers = "From: ".$mailFrom;
-    $txt = "You have received an e-mail from ".$name.".\n\n".$message;
+       if(empty($UserName) || empty($Email) || empty($Subject) || empty($Msg))
+       {
+           header('location:contact.php?error');
+       }
+       else
+       {
+           $to = "k.2003mio@gmail.com";
 
-    mail($mailTo, $subject, $txt, $headers);
-    header("Location: contact.php?mailsend");
-}
-
+           if(mail($to,$Subject,$Msg,$Email))
+           {
+               header("location:Contact.php?success");
+           }
+       }
+    }
+    else
+    {
+        header("location:contact.php");
+    }
+?>
