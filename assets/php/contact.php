@@ -5,7 +5,7 @@
        $UserName = $_POST['name'];
        $Email = $_POST['mail'];
        $Subject = $_POST['Subject'];
-       $Msg = $_POST['Message'];
+       $Msg = $_POST['message'];
 
        if(empty($UserName) || empty($Email) || empty($Subject) || empty($Msg))
        {
@@ -17,7 +17,7 @@
 
            if(mail($to,$Subject,$Msg,$Email))
            {
-               header("location:Contact.php?success");
+               header("location:contact.php?success");
            }
        }
     }
