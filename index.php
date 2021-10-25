@@ -205,10 +205,31 @@
             </section>
 
             <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
+            <div class="contact__container bd-grid">
+
+    
+                    <h2 class="text-center py-2"> Contact Us </h2>
+                    <hr>
+                    <?php
+                    $Msg = "";
+                    if(isset($_GET['error']))
+                    {
+                        $Msg = " Vull de lege velden in. ";
+                        echo '<div class="alert alert-danger">'.$Msg.'</div>';
+                    }
+
+                    if(isset($_GET['success']))
+                    {
+                        $Msg = " Uw bericht is verzonden! ";
+                        echo '<div class="alert alert-success">'.$Msg.'</div>';
+                    }
+
+                    ?>
+                
+                
+                <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
                     <form class="contact-form" action="/assets/php/contact.php" method="post">
                         <input type="text" name="name" placeholder="Full name" class="contact__input">
                         <input type="text" name="mail" placeholder="Your e-mail" class="contact__input">
@@ -219,6 +240,9 @@
                 </div>
             </section>
         </main>
+
+
+
 
         <!--===== FOOTER =====-->
         <footer class="footer">

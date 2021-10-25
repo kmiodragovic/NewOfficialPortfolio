@@ -4,7 +4,7 @@
     {
        $UserName = $_POST['name'];
        $Email = $_POST['mail'];
-       $Subject = $_POST['Subject'];
+       $Subject = $_POST['subject'];
        $Msg = $_POST['message'];
 
        if(empty($UserName) || empty($Email) || empty($Subject) || empty($Msg))
